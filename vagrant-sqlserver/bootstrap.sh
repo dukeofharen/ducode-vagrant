@@ -21,6 +21,9 @@ sudo add-apt-repository "$(curl -s -S --retry 3 https://packages.microsoft.com/c
 sudo apt-get -y -q update
 sudo -E bash -c 'apt-get -y -q install mssql-server'
 sudo -E bash -c 'apt-get -y -q install mssql-tools'
+## Full text search
+sudo apt-get -y -q update
+sudo -E bash -c 'apt-get -y -q install mssql-server-fts'
 # Clean up
 sudo apt-get -y -q autoremove
 sudo apt-get -y -q clean
